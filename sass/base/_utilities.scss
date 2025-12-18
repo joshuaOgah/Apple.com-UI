@@ -1,6 +1,6 @@
 .block-display {
-  display: block;
-  text-align: center;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .margin-sm {

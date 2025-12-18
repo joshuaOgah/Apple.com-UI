@@ -15,11 +15,14 @@
     <div class="overlay"></div>
     <header class="header">
       <nav class="header__nav">
-        <div class="navbar-content">
+        <div class="logo-container">
           <a href="#"
             ><ion-icon class="nav-icons" name="logo-apple"></ion-icon
           ></a>
-          <div class="dropdown Store">
+        </div>
+
+        <ul class="navbar-content">
+          <li class="dropdown Store">
             <a href="#">Store</a>
             <div class="dropdown-content">
               <div class="row-wrapper">
@@ -60,8 +63,8 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="dropdown Mac">
+          </li>
+          <li class="dropdown Mac">
             <a href="#">Mac</a>
             <div class="dropdown-content">
               <div class="row-wrapper">
@@ -107,8 +110,8 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="dropdown iPad">
+          </li>
+          <li class="dropdown iPad">
             <a href="#">iPad</a>
             <div class="dropdown-content">
               <div class="row-wrapper">
@@ -150,8 +153,8 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="dropdown iPhone">
+          </li>
+          <li class="dropdown iPhone">
             <a href="#">iPhone</a>
             <div class="dropdown-content">
               <div class="row-wrapper">
@@ -195,8 +198,8 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="dropdown Watch">
+          </li>
+          <li class="dropdown Watch">
             <a href="#">Watch</a>
             <div class="dropdown-content">
               <div class="row-wrapper">
@@ -237,8 +240,8 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="dropdown Vision">
+          </li>
+          <li class="dropdown Vision">
             <a href="#">Vision</a>
             <div class="dropdown-content">
               <div class="row-wrapper">
@@ -269,8 +272,8 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="dropdown AirPods">
+          </li>
+          <li class="dropdown AirPods">
             <a href="#">AirPods</a>
             <div class="dropdown-content">
               <div class="row-wrapper">
@@ -304,8 +307,8 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="dropdown TV&Home">
+          </li>
+          <li class="dropdown TV&Home">
             <a href="#">TV & Home</a>
             <div class="dropdown-content">
               <div class="row-wrapper">
@@ -347,8 +350,8 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="dropdown Entertainment">
+          </li>
+          <li class="dropdown Entertainment">
             <a href="#">Entertainment</a>
             <div class="dropdown-content">
               <div class="row-wrapper">
@@ -378,8 +381,8 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="dropdown Accessories">
+          </li>
+          <li class="dropdown Accessories">
             <a href="#">Accessories</a>
             <div class="dropdown-content">
               <div class="row-wrapper">
@@ -409,8 +412,8 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="dropdown Support">
+          </li>
+          <li class="dropdown Support">
             <a href="#">Support</a>
             <div class="dropdown-content">
               <div class="row-wrapper">
@@ -449,28 +452,30 @@
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="search">
-            <ion-icon class="nav-icons" name="search-outline"></ion-icon>
-            <div class="search__content"></div>
-          </div>
-          <div class="bag">
-            <ion-icon class="nav-icons" name="bag-outline"></ion-icon>
-            <div class="dropdown-content bag__content">
-              <h2>Your Bag is empty.</h2>
-              <p><a href="#">Sign in</a> to see if you have any saved items.</p>
-              <div>
-                <h3>My Profile</h3>
-                <ul>
-                  <li>Orders</li>
-                  <li>Your saves</li>
-                  <li>Account</li>
-                  <li>Sign in</li>
-                </ul>
-              </div>
+          </li>
+        </ul>
+        <div class="search">
+          <ion-icon class="nav-icons" name="search-outline"></ion-icon>
+          <div class="search__content"></div>
+        </div>
+        <div class="bag">
+          <ion-icon class="nav-icons" name="bag-outline"></ion-icon>
+          <div class="dropdown-content bag__content">
+            <h2>Your Bag is empty.</h2>
+            <p><a href="#">Sign in</a> to see if you have any saved items.</p>
+            <div>
+              <h3>My Profile</h3>
+              <ul>
+                <li>Orders</li>
+                <li>Your saves</li>
+                <li>Account</li>
+                <li>Sign in</li>
+              </ul>
             </div>
           </div>
+        </div>
+        <div class="menu-container">
+          <ion-icon class="menu" name="reorder-two-outline"></ion-icon>
         </div>
       </nav>
     </header>
@@ -632,55 +637,87 @@
             <div class="swiper-slide slide--1">
               <div class="slide__content">
                 <a class="btn--white" href="">Stream now</a>
-                <p><span>Comedy •</span>Same family.New plan.</p>
+                <p>Comedy</p>
+                <p>
+                  <span class="text-dot">•&nbsp;</span>Same family.New plan.
+                </p>
               </div>
             </div>
             <div class="swiper-slide slide--2">
               <div class="slide__content">
                 <a class="btn--white" href="">Stream now</a>
-                <p><span>Comedy •</span>Same family.New plan.</p>
+                <p>Drama</p>
+                <p>
+                  <span class="text-dot">•&nbsp;</span>Happiness is a state of
+                  mind
+                </p>
               </div>
             </div>
             <div class="swiper-slide slide--3">
               <div class="slide__content">
                 <a class="btn--white" href="">Stream now</a>
-                <p><span>Comedy •</span>Same family.New plan.</p>
+                <p>Comedy</p>
+                <p>
+                  <span class="text-dot">•&nbsp;</span>Start your holidays on a
+                  high note.
+                </p>
               </div>
             </div>
             <div class="swiper-slide slide--4">
               <div class="slide__content">
                 <a class="btn--white" href="">Stream now</a>
-                <p><span>Comedy •</span>Same family.New plan.</p>
+                <p>Holiday</p>
+                <p>
+                  <span class="text-dot">•&nbsp;</span>Happiness is the
+                  holidays!
+                </p>
               </div>
             </div>
             <div class="swiper-slide slide--5">
               <div class="slide__content">
                 <a class="btn--white" href="">Stream now</a>
-                <p><span>Comedy •</span>Same family.New plan.</p>
+                <p>Drama</p>
+                <p>
+                  <span class="text-dot">•&nbsp;</span>The truth is the top
+                  story
+                </p>
               </div>
             </div>
             <div class="swiper-slide slide--6">
               <div class="slide__content">
                 <a class="btn--white" href="">Stream now</a>
-                <p><span>Comedy •</span>Same family.New plan.</p>
+                <p>Thriller</p>
+                <p><span class="text-dot">•&nbsp;</span>Curiosity kills.</p>
               </div>
             </div>
             <div class="swiper-slide slide--7">
               <div class="slide__content">
                 <a class="btn--white" href="">Stream now</a>
-                <p><span>Comedy •</span>Same family.New plan.</p>
+                <p>Drama</p>
+                <p>
+                  <span class="text-dot">•&nbsp;</span>Old sins cast new
+                  shadows.
+                </p>
               </div>
             </div>
             <div class="swiper-slide slide--8">
               <div class="slide__content">
                 <a class="btn--white" href="">Stream now</a>
-                <p><span>Comedy •</span>Same family.New plan.</p>
+                <p>Action</p>
+                <p>
+                  <span class="text-dot">•&nbsp;</span>600,000 square miles.
+                  Nowhere to hide.
+                </p>
               </div>
             </div>
             <div class="swiper-slide slide--9">
               <div class="slide__content">
                 <a class="btn--white" href="">Stream now</a>
-                <p><span>Comedy •</span>Same family.New plan.</p>
+                <p>Action</p>
+                <p>
+                  <span class="text-dot">•&nbsp;</span>Now streaming on Apple
+                  TV.
+                </p>
               </div>
             </div>
           </div>
@@ -692,14 +729,16 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide s1">
               <p class="center-text">
-                Sabrina Carpenter: The Zane <br />
-                Lowe Interview
+                <span class="center-text--1">Sabrina Carpenter: </span>
+                <span class="center-text--2">The Zane Lowe Interview</span>
               </p>
               <figure class="item__image">
                 <img src="./img/Sabrina Carpenter.jpg" alt="" />
               </figure>
               <div class="s__content">
-                <div class="logo">Music</div>
+                <div class="logo">
+                  <ion-icon name="logo-apple"></ion-icon>Music
+                </div>
                 <div class="copy2">
                   <a href="#" class="btn--white">Listen now</a>
                 </div>
@@ -711,7 +750,9 @@
               </figure>
 
               <div class="s__content">
-                <div class="logo">Arcade</div>
+                <div class="logo">
+                  <ion-icon name="logo-apple"></ion-icon>Arcade
+                </div>
                 <div class="copy">
                   <p>NBA 2K26 Arcade Edition</p>
                   <a href="#" class="btn--white">Play now</a>
@@ -723,7 +764,9 @@
                 <img src="./img/The movie.jpg" alt="" />
               </figure>
               <div class="s__content">
-                <div class="logo">Fitness+</div>
+                <div class="logo">
+                  <ion-icon name="logo-apple"></ion-icon>Fitness+
+                </div>
                 <div class="copy">
                   <p>Inspired by "F1® The Movie"</p>
                   <a href="#" class="btn--white">Watch now</a>
@@ -736,7 +779,9 @@
                 <img src="./img/A List Pop.jpg" alt="" />
               </figure>
               <div class="s__content">
-                <div class="logo">Fitness+</div>
+                <div class="logo">
+                  <ion-icon name="logo-apple"></ion-icon>Fitness+
+                </div>
                 <div class="copy2">
                   <a href="#" class="btn--white">Watch now</a>
                 </div>
@@ -747,7 +792,9 @@
                 <img src="./img/Hello Kitty.jpg" alt="" />
               </figure>
               <div class="s__content">
-                <div class="logo">Arcade</div>
+                <div class="logo">
+                  <ion-icon name="logo-apple"></ion-icon>Arcade
+                </div>
                 <div class="copy">
                   <p>Hello Kitty Island Adventure</p>
                   <a href="#" class="btn--white">Play now</a>
@@ -759,7 +806,9 @@
                 <img src="./img/Core.jpg" alt="" />
               </figure>
               <div class="s__content">
-                <div class="logo">Fitness+</div>
+                <div class="logo">
+                  <ion-icon name="logo-apple"></ion-icon>Fitness+
+                </div>
                 <div class="copy">
                   <p>Core with gregg</p>
                   <a href="#" class="btn--white">Watch now</a>
@@ -772,7 +821,9 @@
                 <img src="./img/NMD.jpg" alt="" />
               </figure>
               <div class="s__content">
-                <div class="logo">Music</div>
+                <div class="logo">
+                  <ion-icon name="logo-apple"></ion-icon>Music
+                </div>
                 <div class="copy2">
                   <a href="#" class="btn--white">Listen now</a>
                 </div>
@@ -784,7 +835,9 @@
               </figure>
 
               <div class="s__content">
-                <div class="logo">Arcade</div>
+                <div class="logo">
+                  <ion-icon name="logo-apple"></ion-icon>Arcade
+                </div>
                 <div class="copy">
                   <p>Angry Birds Bounce</p>
                   <a href="#" class="btn--white">Play now</a>
@@ -792,13 +845,19 @@
               </div>
             </div>
             <div class="swiper-slide s9">
-              <figure class="image-small">
+              <picture class="image-small">
+                <source
+                  srcset="./img/meditation_mobile.jpg"
+                  media="(max-width: 500px)"
+                />
                 <img src="./img/Singer.jpg" alt="" />
-              </figure>
+              </picture>
               <div class="s__content">
-                <div class="logo">Fitness+</div>
+                <div class="logo">
+                  <ion-icon name="logo-apple"></ion-icon>Fitness+
+                </div>
                 <div class="copy">
-                  <p>Artist Spotlight: Mariah Carey</p>
+                  <p>Calm meditations with visualizations</p>
                   <a href="#" class="btn--white">Watch now</a>
                 </div>
               </div>
@@ -876,155 +935,247 @@
 
         <section class="footer__section--2">
           <nav class="footer__nav">
-            <div class="column">
-              <div>
-                <h3>Shop and Learn</h3>
-                <ul>
-                  <li>
-                    <a href="https://www.apple.com/us/shop/goto/store">Store</a>
-                  </li>
-                  <li><a href="https://www.apple.com/mac/">Mac</a></li>
-                  <li><a href="https://www.apple.com/ipad/">iPad</a></li>
-                  <li><a href="https://www.apple.com/iphone/">iPhone</a></li>
-                  <li><a href="https://www.apple.com/watch/">Watch</a></li>
-                  <li>
-                    <a href="https://www.apple.com/apple-vision-pro/">Vision</a>
-                  </li>
-                  <li><a href="https://www.apple.com/airpods/">AirPods</a></li>
-                  <li>
-                    <a href="https://www.apple.com/tv-home/">TV & Home</a>
-                  </li>
-                  <li><a href="https://www.apple.com/airtag/">AirTag</a></li>
-                  <li>
-                    <a href="https://www.apple.com/us/shop/goto/buy_accessories"
-                      >Accessories</a
-                    >
-                  </li>
-                  <li>
-                    <a href="https://www.apple.com/shop/gift-cards"
-                      >Gift Cards</a
-                    >
-                  </li>
-                </ul>
+            <ul class="footer__nav-list">
+              <!--col 1 -->
+              <div class="col">
+                <li class="footer__nav-item">
+                  <h3>Shop and Learn</h3>
+                  <div class="chevron-container">
+                    <ion-icon
+                      class="chevron-down"
+                      name="chevron-down-outline"
+                    ></ion-icon>
+                    <ion-icon
+                      class="chevron-up"
+                      name="chevron-up-outline"
+                    ></ion-icon>
+                  </div>
+                  <ul class="footer-drop">
+                    <li>
+                      <a href="https://www.apple.com/us/shop/goto/store"
+                        >Store</a
+                      >
+                    </li>
+                    <li><a href="https://www.apple.com/mac/">Mac</a></li>
+                    <li><a href="https://www.apple.com/ipad/">iPad</a></li>
+                    <li><a href="https://www.apple.com/iphone/">iPhone</a></li>
+                    <li><a href="https://www.apple.com/watch/">Watch</a></li>
+                    <li>
+                      <a href="https://www.apple.com/apple-vision-pro/"
+                        >Vision</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://www.apple.com/airpods/">AirPods</a>
+                    </li>
+                    <li>
+                      <a href="https://www.apple.com/tv-home/">TV & Home</a>
+                    </li>
+                    <li><a href="https://www.apple.com/airtag/">AirTag</a></li>
+                    <li>
+                      <a
+                        href="https://www.apple.com/us/shop/goto/buy_accessories"
+                        >Accessories</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://www.apple.com/shop/gift-cards"
+                        >Gift Cards</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="footer__nav-item">
+                  <h3>Apple Wallet</h3>
+                  <div class="chevron-container">
+                    <ion-icon
+                      class="chevron-down"
+                      name="chevron-down-outline"
+                    ></ion-icon>
+                  </div>
+                  <ul class="footer-drop">
+                    <li><a href="https://www.apple.com/wallet/">Wallet</a></li>
+                    <li>
+                      <a href="https://www.apple.com/apple-card/">Apple Card</a>
+                    </li>
+                    <li>
+                      <a href="https://www.apple.com/apple-pay/">Apple Pay</a>
+                    </li>
+                    <li>
+                      <a href="https://www.apple.com/apple-cash/">Apple Cash</a>
+                    </li>
+                  </ul>
+                </li>
               </div>
-              <div>
-                <h3>Apple Wallet</h3>
-                <ul>
-                  <li><a href="https://www.apple.com/wallet/">Wallet</a></li>
-                  <li>
-                    <a href="https://www.apple.com/apple-card/">Apple Card</a>
-                  </li>
-                  <li>
-                    <a href="https://www.apple.com/apple-pay/">Apple Pay</a>
-                  </li>
-                  <li>
-                    <a href="https://www.apple.com/apple-cash/">Apple Cash</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="column">
-              <div>
-                <h3>Account</h3>
-                <ul>
-                  <li><a href="#">Manage Your Apple Account</a></li>
-                  <li><a href="#">Apple Store Account</a></li>
-                  <li><a href="#">iCloud.com</a></li>
-                </ul>
-              </div>
-              <div>
-                <h3>Entertainment</h3>
-                <ul>
-                  <li><a href="#">Apple One</a></li>
-                  <li><a href="#">Apple TV+</a></li>
-                  <li><a href="#">Apple Music</a></li>
-                  <li><a href="#">Apple Arcade</a></li>
-                  <li><a href="#">Apple Fitness+</a></li>
-                  <li><a href="#">Apple News+</a></li>
-                  <li><a href="#">Apple Podcasts</a></li>
-                  <li><a href="#">Apple Books</a></li>
-                  <li><a href="#">Apple Store</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="column">
-              <div>
-                <h3>Apple Store</h3>
-                <ul>
-                  <li><a href="#">Find a Store</a></li>
-                  <li><a href="#">Genius Bar</a></li>
-                  <li><a href="#">Today at Apple</a></li>
-                  <li><a href="#">Group Reservations</a></li>
-                  <li><a href="#">Apple Camp</a></li>
-                  <li><a href="#">Apple Store App</a></li>
-                  <li><a href="#">Certified Refurbished</a></li>
-                  <li><a href="#">Apple Trade In</a></li>
-                  <li><a href="#">Financing</a></li>
-                  <li><a href="#">Carrier Deals at Apple</a></li>
-                  <li><a href="#">Order Status</a></li>
-                  <li><a href="#">Shopping Help</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="column">
-              <div>
-                <h3>For Business</h3>
-                <ul>
-                  <li><a href="#">Apple and Business</a></li>
-                  <li><a href="#">Shop for Business</a></li>
-                </ul>
-              </div>
-              <div>
-                <h3>For Education</h3>
-                <ul>
-                  <li><a href="#">Apple and Education</a></li>
-                  <li><a href="#">Shop for K-12</a></li>
-                  <li><a href="#">Shop for College</a></li>
-                </ul>
-              </div>
-              <div>
-                <h3>For Healthcare</h3>
-                <ul>
-                  <li><a href="#">Apple and Healthcare</a></li>
-                </ul>
-              </div>
-              <div>
-                <h3>For Government</h3>
-                <ul>
-                  <li><a href="#">Apple and Government</a></li>
-                  <li><a href="#">Shop for Veterans and Military</a></li>
-                  <li><a href="#">Shop for State and Local Employees</a></li>
-                  <li><a href="#">Shop for Federal Employees</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="column">
-              <div>
-                <h3>Apple Values</h3>
-                <ul>
-                  <li><a href="#">Accessibility</a></li>
-                  <li><a href="#">Education</a></li>
-                  <li><a href="#">Environment</a></li>
-                  <li><a href="#">Inclusion and Diversity</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Racial Equity and Justice</a></li>
-                  <li><a href="#">Supply Chain Innovation</a></li>
-                </ul>
+              <!--col 2 -->
+              <div class="col">
+                <li class="footer__nav-item">
+                  <h3>Account</h3>
+                  <div class="chevron-container">
+                    <ion-icon
+                      class="chevron-down"
+                      name="chevron-down-outline"
+                    ></ion-icon>
+                  </div>
+                  <ul class="footer-drop">
+                    <li><a href="#">Manage Your Apple Account</a></li>
+                    <li><a href="#">Apple Store Account</a></li>
+                    <li><a href="#">iCloud.com</a></li>
+                  </ul>
+                </li>
+
+                <li class="footer__nav-item">
+                  <h3>Entertainment</h3>
+                  <div class="chevron-container">
+                    <ion-icon
+                      class="chevron-down"
+                      name="chevron-down-outline"
+                    ></ion-icon>
+                  </div>
+                  <ul class="footer-drop">
+                    <li><a href="#">Apple One</a></li>
+                    <li><a href="#">Apple TV+</a></li>
+                    <li><a href="#">Apple Music</a></li>
+                    <li><a href="#">Apple Arcade</a></li>
+                    <li><a href="#">Apple Fitness+</a></li>
+                    <li><a href="#">Apple News+</a></li>
+                    <li><a href="#">Apple Podcasts</a></li>
+                    <li><a href="#">Apple Books</a></li>
+                    <li><a href="#">Apple Store</a></li>
+                  </ul>
+                </li>
               </div>
 
-              <div>
-                <h3>About Apple</h3>
-                <ul>
-                  <li><a href="#">Newsroom</a></li>
-                  <li><a href="#">Apple Leadership</a></li>
-                  <li><a href="#">Career Opportunities</a></li>
-                  <li><a href="#">Investors</a></li>
-                  <li><a href="#">Ethics and Compliance</a></li>
-                  <li><a href="#">Events</a></li>
-                  <li><a href="#">Contact Apple</a></li>
-                </ul>
+              <!--col 3-->
+              <div class="col">
+                <li class="footer__nav-item">
+                  <h3>Apple Store</h3>
+                  <div class="chevron-container">
+                    <ion-icon
+                      class="chevron-down"
+                      name="chevron-down-outline"
+                    ></ion-icon>
+                  </div>
+                  <ul class="footer-drop">
+                    <li><a href="#">Find a Store</a></li>
+                    <li><a href="#">Genius Bar</a></li>
+                    <li><a href="#">Today at Apple</a></li>
+                    <li><a href="#">Group Reservations</a></li>
+                    <li><a href="#">Apple Camp</a></li>
+                    <li><a href="#">Apple Store App</a></li>
+                    <li><a href="#">Certified Refurbished</a></li>
+                    <li><a href="#">Apple Trade In</a></li>
+                    <li><a href="#">Financing</a></li>
+                    <li><a href="#">Carrier Deals at Apple</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Shopping Help</a></li>
+                  </ul>
+                </li>
               </div>
-            </div>
+
+              <!--col 4-->
+
+              <div class="col">
+                <li class="footer__nav-item">
+                  <h3>For Business</h3>
+                  <div class="chevron-container">
+                    <ion-icon
+                      class="chevron-down"
+                      name="chevron-down-outline"
+                    ></ion-icon>
+                  </div>
+                  <ul class="footer-drop">
+                    <li><a href="#">Apple and Business</a></li>
+                    <li><a href="#">Shop for Business</a></li>
+                  </ul>
+                </li>
+
+                <li class="footer__nav-item">
+                  <h3>For Education</h3>
+                  <div class="chevron-container">
+                    <ion-icon
+                      class="chevron-down"
+                      name="chevron-down-outline"
+                    ></ion-icon>
+                  </div>
+                  <ul class="footer-drop">
+                    <li><a href="#">Apple and Education</a></li>
+                    <li><a href="#">Shop for K-12</a></li>
+                    <li><a href="#">Shop for College</a></li>
+                  </ul>
+                </li>
+                <li class="footer__nav-item">
+                  <h3>For Healthcare</h3>
+                  <div class="chevron-container">
+                    <ion-icon
+                      class="chevron-down"
+                      name="chevron-down-outline"
+                    ></ion-icon>
+                  </div>
+                  <ul class="footer-drop">
+                    <li><a href="#">Apple and Healthcare</a></li>
+                  </ul>
+                </li>
+                <li class="footer__nav-item">
+                  <h3>For Government</h3>
+                  <div class="chevron-container">
+                    <ion-icon
+                      class="chevron-down"
+                      name="chevron-down-outline"
+                    ></ion-icon>
+                  </div>
+                  <ul class="footer-drop">
+                    <li><a href="#">Apple and Government</a></li>
+                    <li><a href="#">Shop for Veterans and Military</a></li>
+                    <li><a href="#">Shop for State and Local Employees</a></li>
+                    <li><a href="#">Shop for Federal Employees</a></li>
+                  </ul>
+                </li>
+              </div>
+
+              <!--col 5-->
+
+              <div class="col">
+                <li class="footer__nav-item">
+                  <h3>Apple Values</h3>
+                  <div class="chevron-container">
+                    <ion-icon
+                      class="chevron-down"
+                      name="chevron-down-outline"
+                    ></ion-icon>
+                  </div>
+                  <ul class="footer-drop">
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Environment</a></li>
+                    <li><a href="#">Inclusion and Diversity</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Racial Equity and Justice</a></li>
+                    <li><a href="#">Supply Chain Innovation</a></li>
+                  </ul>
+                </li>
+
+                <li class="footer__nav-item">
+                  <h3>About Apple</h3>
+                  <div class="chevron-container">
+                    <ion-icon
+                      class="chevron-down"
+                      name="chevron-down-outline"
+                    ></ion-icon>
+                  </div>
+                  <ul class="footer-drop">
+                    <li><a href="#">Newsroom</a></li>
+                    <li><a href="#">Apple Leadership</a></li>
+                    <li><a href="#">Career Opportunities</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Ethics and Compliance</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contact Apple</a></li>
+                  </ul>
+                </li>
+              </div>
+            </ul>
           </nav>
 
           <p class="extra-info">

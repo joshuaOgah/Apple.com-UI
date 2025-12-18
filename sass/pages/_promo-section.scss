@@ -67,3 +67,54 @@
 .apple_card_logo {
   width: 15rem;
 }
+
+@media (max-width: 500px) {
+  .promo {
+    &__content {
+      width: 97vw;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    &-item {
+      & > .copy {
+        width: 25rem;
+        text-align: center;
+      }
+    }
+
+    &-item.ipad {
+      & .copy {
+        width: 32rem;
+      }
+    }
+
+    &-item.apple-card {
+      & .copy {
+        width: 30rem;
+      }
+    }
+  }
+
+  .ipad_air_logo {
+    width: 13rem;
+  }
+
+  .apple-watch {
+    background-image: url(../img/apple_watch_mobile.jpg);
+  }
+
+  .apple_watch_logo {
+    width: 25rem;
+  }
+
+  .trade_in_logo {
+    width: 15rem;
+  }
+
+  .apple_card_logo {
+    width: 10rem;
+  }
+}

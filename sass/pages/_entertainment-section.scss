@@ -14,7 +14,7 @@
 .swiper {
   height: 100vh;
   margin: 0 auto;
-  max-width: 85vw;
+  width: 85vw;
   overflow: visible;
   // background-color: red;
 
@@ -70,4 +70,75 @@
 }
 .slide--9 {
   background-image: $gradient, url(../img/Loot.jpg);
+}
+
+@media (max-width: 500px) {
+  .entertainment {
+    height: 60rem;
+  }
+  .swiper {
+    margin: 0 auto;
+    height: inherit;
+    &-slide {
+      width: 28rem;
+      & > .slide__content {
+        width: 100%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4rem;
+
+        & > a {
+          order: 2;
+        }
+
+        & p {
+          color: $color-white;
+          font-size: 2rem;
+        }
+      }
+
+      & span {
+        text-align: center;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .slide--1 {
+    background-image: $gradient, url(../img/mob5.jpg);
+  }
+  .slide--2 {
+    background-image: $gradient, url(../img/mob4.jpg);
+  }
+  .slide--3 {
+    background-image: $gradient, url(../img/mob7.jpg);
+  }
+  .slide--4 {
+    background-image: $gradient, url("../img/mob6.jpg");
+  }
+  .slide--5 {
+    background-image: $gradient, url("../img/mob8.jpg");
+  }
+  .slide--6 {
+    background-image: $gradient, url(../img/mobile1.jpg);
+  }
+  .slide--7 {
+    background-image: $gradient, url(../img/mob2.jpg);
+  }
+  .slide--8 {
+    background-image: $gradient, url(../img/mob3.jpg);
+  }
+  .slide--9 {
+    background-image: $gradient, url(../img/mob9.jpg);
+  }
+
+  .text-dot {
+    display: none;
+  }
 }

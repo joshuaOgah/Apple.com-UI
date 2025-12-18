@@ -30,3 +30,16 @@ body {
   font-weight: 400;
   margin-bottom: 3rem;
 }
+
+@media (max-width: 500px) {
+  body {
+    font-size: 1.4rem;
+  }
+  .hero-heading {
+    font-size: 3.2rem;
+  }
+
+  .body-text--24px {
+    font-size: 1.9rem;
+  }
+}

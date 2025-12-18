@@ -48,3 +48,20 @@
     }
   }
 }
+
+button {
+  outline: none;
+  border: none;
+  background-color: none;
+}
+
+@media (max-width: 412px) {
+  .btn {
+    &--white {
+      &:link,
+      &:visited {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

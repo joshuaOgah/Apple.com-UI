@@ -74,3 +74,38 @@ video {
   z-index: -1;
   display: block;
 }
+
+@media (max-width: 500px) {
+  .hero {
+    & > * {
+      height: 50rem;
+      align-content: center;
+      text-align: center;
+    }
+
+    &__holiday {
+      &-content {
+        position: absolute;
+        bottom: 4rem;
+        left: 8rem;
+        margin: 0 auto;
+        width: 25rem;
+      }
+    }
+
+    &__iphone {
+      background-image: url("../img/iPhone_mobile.jpg");
+
+      &-content {
+        width: 25rem;
+      }
+    }
+
+    &__airpods {
+      background-image: url("../img/airpods_mobile.jpg");
+      &-content {
+        width: 25rem;
+      }
+    }
+  }
+}
