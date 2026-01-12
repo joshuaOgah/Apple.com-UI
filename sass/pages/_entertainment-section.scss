@@ -72,7 +72,7 @@
   background-image: $gradient, url(../img/Loot.jpg);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 950px) {
   .entertainment {
     height: 60rem;
   }
@@ -108,6 +108,16 @@
         font-weight: 700;
       }
     }
+  }
+
+  .tv-logo {
+    width: 5rem;
+    height: 2.6rem;
+  }
+
+  .swiper-slide {
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .slide--1 {

@@ -55,7 +55,7 @@ body {
   margin-bottom: 3rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 950px) {
   body {
     font-size: 1.4rem;
   }
@@ -73,6 +73,14 @@ body {
 
 .margin-sm {
   margin-top: 0.8rem;
+}
+
+.margin-top {
+  margin-top: 1rem;
+}
+
+.margin-bottom {
+  margin-bottom: 0.4rem;
 }
 
 .btn--blue:link, .btn--blue:visited {
@@ -116,7 +124,7 @@ button {
   background-color: none;
 }
 
-@media (max-width: 412px) {
+@media (max-width: 950px) {
   .btn--white:link, .btn--white:visited {
     font-size: 1.2rem;
   }
@@ -134,23 +142,14 @@ button {
   width: 100%;
   height: 100%;
   background-color: hsl(0, 0%, 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
 }
 
 .navbar-content {
   display: flex;
   align-items: center;
   max-width: 100rem;
-  flex: 0 0 100rem;
   height: 100%;
+  margin: 0 auto;
   justify-content: space-between;
 }
 .navbar-content a:link, .navbar-content a:visited {
@@ -160,16 +159,8 @@ button {
 }
 
 .nav-icons {
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   color: hsl(0, 0%, 0%);
-}
-
-.menu-container {
-  display: none;
-}
-
-.menu {
-  font-size: 3rem;
 }
 
 .dropdown-content {
@@ -238,29 +229,99 @@ button {
   transition: opacity 0.32s cubic-bezier(0.4, 0, 0.6, 1) 80ms, visibility 0.32s step-end 80ms;
 }
 
-@media (max-width: 500px) {
-  .header {
-    width: 100vw;
-    background-color: hsl(0, 0%, 100%);
+.nav-menu,
+.modal-close {
+  display: none;
+}
+
+@media (max-width: 950px) {
+  .navbar-content {
+    gap: 2rem;
   }
-  .header__nav {
-    margin: 0 auto;
-    width: 95%;
-    height: 100%;
-    background-color: hsl(0, 0%, 100%);
-    justify-content: start;
+  .navbar-content .dropdown {
+    display: none;
   }
-  .logo-container {
+  .navbar-content :first-child {
     flex: 1;
   }
-  .navbar-content {
+  .nav-menu,
+  .modal-close {
+    display: block;
+  }
+  .navbar-content_container {
+    position: fixed;
+    inset: 0;
     display: none;
     flex-direction: column;
-    height: 100vh;
-    background-color: hsl(0, 0%, 100%);
+    gap: 1.5rem;
+    padding-top: 7rem;
+    padding-left: 4rem;
+    z-index: 2000;
+    background-color: white;
   }
-  .menu-container {
+  .navbar-content_container a {
+    color: black;
+  }
+  .navbar-content_container.show-navbar {
+    display: flex;
+  }
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 1.1rem;
+    background-color: hsl(0, 0%, 100%);
+    transition: all 0.4s;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .dropdown-content .column--1 a {
+    font-size: 1.8rem;
+  }
+  .dropdown-content.show-dropdown {
     display: block;
+  }
+  .row-wrapper {
+    max-width: 100vw;
+    min-height: 110vh;
+    margin: 0 auto;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 6rem 4rem;
+  }
+  .column--1 {
+    gap: 2rem;
+  }
+  .column--2, .column--3 {
+    gap: 2rem;
+  }
+  .column--2 h2, .column--3 h2 {
+    font-size: 1.7rem;
+  }
+  .column--2 a:link,
+  .column--2 a:visited, .column--3 a:link,
+  .column--3 a:visited {
+    font-size: 1.7rem;
+  }
+  .column ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .close-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  .chevron-back {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
   }
 }
 .hero {
@@ -278,6 +339,10 @@ button {
   background: none;
 }
 .hero__holiday > figure {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   background-color: rgb(245, 244, 244);
@@ -285,9 +350,9 @@ button {
 .hero__holiday-content {
   position: absolute;
   bottom: 5rem;
-  left: 23rem;
+  left: 0;
   margin: 0 auto;
-  width: 70%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -332,7 +397,7 @@ video {
   display: block;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 950px) {
   .hero > * {
     height: 50rem;
     align-content: center;
@@ -341,9 +406,8 @@ video {
   .hero__holiday-content {
     position: absolute;
     bottom: 4rem;
-    left: 8rem;
+    left: 0;
     margin: 0 auto;
-    width: 25rem;
   }
   .hero__iphone {
     background-image: url("../img/iPhone_mobile.jpg");
@@ -425,7 +489,7 @@ video {
   width: 15rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 950px) {
   .promo__content {
     width: 97vw;
     margin: 0 auto;
@@ -534,7 +598,7 @@ video {
   background-image: radial-gradient(100% 33% at left bottom, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0)), url(../img/Loot.jpg);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 950px) {
   .entertainment {
     height: 60rem;
   }
@@ -567,6 +631,14 @@ video {
   .swiper-slide span {
     text-align: center;
     font-weight: 700;
+  }
+  .tv-logo {
+    width: 5rem;
+    height: 2.6rem;
+  }
+  .swiper-slide {
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .slide--1 {
     background-image: radial-gradient(100% 33% at left bottom, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0)), url(../img/mob5.jpg);
@@ -705,7 +777,7 @@ video {
   transform: translate(48%, 50%);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 950px) {
   #media-swiper .swiper-wrapper {
     width: 19rem;
     height: 25.4rem;
@@ -838,6 +910,11 @@ video {
   border-bottom: 1px solid;
 }
 
+.footer-drop {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
 .footer-drop a:link, .footer-drop a:visited {
   color: rgba(0, 0, 0, 0.56);
   font-size: 1.2rem;
@@ -847,7 +924,6 @@ video {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
 }
 .column h3 {
   margin-bottom: 1rem;
@@ -855,7 +931,12 @@ video {
   color: rgba(0, 0, 0, 0.6941176471);
 }
 
-@media (max-width: 500px) {
+.footer__nav-item h3 {
+  color: hsl(0, 0%, 0%);
+  font-size: 1.3rem;
+}
+
+@media (max-width: 950px) {
   .footer__nav-list {
     display: grid;
     grid-template-columns: 1fr;
@@ -868,6 +949,8 @@ video {
   }
   .footer__nav-item > h3 {
     grid-column: 1/span 2;
+    font-weight: 300;
+    font-size: 1.6rem;
   }
   .footer-drop {
     grid-column: 2/3;
@@ -883,11 +966,17 @@ video {
     justify-content: center;
     align-items: center;
   }
-  .chevron-up {
-    position: absolute;
-    top: 0;
-    left: 0;
+  .chevron-down {
+    display: block;
+  }
+  .chevron-down.chevron-inactive {
     display: none;
+  }
+  .chevron-up {
+    display: none;
+  }
+  .chevron-up.chevron-active {
+    display: block;
   }
   .col {
     display: grid;
